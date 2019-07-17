@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Allan Wanderley | Contato</title>
+    <style>
+        body{
+            height: 100vh;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        p{
+            margin-bottom: 4px ;
+        }
+
+        .app-color{
+            background-color: rgb(23, 25, 109);
+        }
+
+        .app-button{
+            width: 220px;
+        }
+
+        .footer{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: rgb(23, 25, 109);
+            color: #fff;
+            padding: 10px 5px;
+        }
+
+        .link{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .link:hover{
+            color: rgb(80, 105, 185);
+            text-decoration: none;
+            transition: .15s;
+        }
+
+        @media(max-width: 768px){
+            .footer{
+                height: 120px;
+                justify-content: center;
+                align-items: space-between;
+            }
+
+            .app-button{
+                margin-bottom: 15px !important;
+            }
+        }
+
+    </style>
+    <script src="https://kit.fontawesome.com/c412b87a2b.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark app-color">
+        <a class="navbar-brand" href="/">
+            <div class="d-flex align-items-center">
+                <img src="/public/imgs/logo.webp" width="30" height="30" alt="Logo">
+                <span class="ml-4 mr-4"><strong>Allan</strong></span>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="/"><strong>Sobre</strong></a>
+                </li>
+                <li class="nav-item p-2">
+                    <div class="btn-group">
+                        <a class="nav-link" href="/projetos"><strong>Projetos</strong></a>
+                        <a class="dropdown-toggle dropdown-toggle-split d-flex align-items-center" style="cursor: pointer; color: #fff;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/projetos/aps-poo">Jogo de digitaçao (Java)</a>
+                            <a class="dropdown-item" disabled href="/projetos/code-char">Code char</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/projetos">Ver todos</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item active p-2">
+                    <a class="nav-link" href="/contato"><strong>Contato</strong><span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <div style="height: 100vh;">
+            <div class="container content mb-4 mt-4">
+                <div class="row mb-5">
+                    <div class="col-xs-12 col-md-8 p-5 description">
+                        <div class="d-flex">
+                            <i class="fas fa-phone fa-2x mr-2"></i>
+                            <h2>Fale comigo!</h2>
+                        </div>
+                        <small class="form-text">Dúvida, critica ou sugestão ? Basta falar comigo por uma das mídias abaixo.</small>
+                    </div>
+                </div>
+            </div>
+            <div class="container content mb-4">
+                <small class="form-text text-muted mb-3">Clique na imagem a esquerda do endereço para ser redirecionado, ou copie o link e cole na barra do seu navegador</small>
+                <div class="input-group mb-2">
+                        <a href="https://github.com/allanalves23" class="link input-group-prepend" target="_blank">
+                            <div class="input-group-text"><i class="fab fa-github"></i></div>
+                        </a>
+                    <input type="text" class="form-control" id="github" value="https://github.com/allanalves23" readonly>
+                </div>
+                <div class="input-group mb-2">
+                        <a href="https://linkedin.com/in/allanalves23" class="link input-group-prepend" target="_blank">
+                            <div class="input-group-text"><i class="fab fa-linkedin"></i></div>
+                        </a>
+                    <input type="text" class="form-control" id="linkedin" value="https://linkedin.com/in/allanalves23" readonly>
+                </div>
+                <div class="input-group mb-2">
+                        <a href="mailto:awallan259@gmail.com" class="link input-group-prepend" target="_blank">
+                            <div class="input-group-text"><i class="fas fa-at"></i></div>
+                        </a>
+                    <input type="text" class="form-control" id="github" value="awallan259@gmail.com" readonly>
+                </div>
+                <div class="row d-flex justify-content-center flex-wrap mt-5 mb-5">
+                    <a href="/curriculum" download="Allan - Currículo.pdf" class="btn link app-color app-button mr-3 mb-2">
+                        <i class="fas fa-file-download fa-md mr-2"></i>
+                        Currículo
+                    </a>
+                    <a href="/projetos" class="btn app-color link app-button mr-3 mb-2">
+                        <i class="fas fa-project-diagram fa-md mr-2"></i>
+                        Projetos
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="d-flex align-items-center">
+                <a href="https://github.com/allanalves23" class="link ml-4 mr-4"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://linkedin.com/in/allanalves23" class="link ml-4 mr-4"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="mailto:awallan259@gmail.com" class="link ml-4 mr-4"><i class="fas fa-at fa-2x"></i></a>
+            </div>
+            <div class="d-flex justify-content-end align-items-center p-1" id="year"></div>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('#year').insertAdjacentHTML('afterbegin', `<a href="/" class="link"><i class="fas fa-server mr-2"></i><span class="mr-2 ml-2"> allanalves23 - ${new Date().getFullYear()}</span></a>`)
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
