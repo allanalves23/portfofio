@@ -1,12 +1,16 @@
-const express = require('express')()
+const express = require('express')
+const app = express()
 
-express.route('/')
+
+app.use('/public', express.static('public'))
+
+app.route('/')
     .get((req, res) => res.sendFile('./index.html', {root: __dirname}))
 
-express.route('/api/estudante-ti')
+app.route('/api/estudante-ti')
     .get((req, res) => res.sendFile('./docs/estudante-ti/index.html', {root: __dirname}))
 
-express.route('/test')
+app.route('/test')
     .get((req, res) => res.status(200).send('Recurso test'))
 
-express.listen(3000, () => console.log('executando na porta 3000'))
+app.listen(3000, () => console.log('executando na porta 3000'))
