@@ -6,7 +6,7 @@ app.use('/public', express.static('public'))
 
 app.route('/')
     .get((req, res) => {
-        console.log(req.ip)
+        console.log(req.connection.remoteAddress)
         return res.sendFile('./index.html', {root: __dirname})
     })
 
