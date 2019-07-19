@@ -5,7 +5,10 @@ const app = express()
 app.use('/public', express.static('public'))
 
 app.route('/')
-    .get((req, res) => res.sendFile('./index.html', {root: __dirname}))
+    .get((req, res) => {
+        console.log(req.ip)
+        return res.sendFile('./index.html', {root: __dirname})
+    })
 
 app.route('/contato')
     .get((req, res) => res.sendFile('./contact.html', {root: __dirname}))
