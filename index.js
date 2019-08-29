@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
+const bodyParser = require('body-parser')
 
 
 app.use('/public', express.static('public'))
+app.use(bodyParser.json({limit: '10mb'}))
 
 app.route('/')
     .get((req, res) => {
@@ -27,6 +29,10 @@ app.get('/curriculum', (req, res) => res.download('./public/pdf/Allan_Curriculo.
 app.route('/api/estudante-ti')
     .get((req, res) => res.sendFile('./docs/estudante-ti/index.html', {root: __dirname}))
 
+app.post('/debugTest' , (req, res) => {
+    const data = {...req.body}
+    return res.json(data)
+})
 
 
 app.listen(3000, () => console.log('executando na porta 3000'))
