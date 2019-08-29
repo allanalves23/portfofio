@@ -1,10 +1,12 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+const cors = require('cors')
 
 
 app.use('/public', express.static('public'))
 app.use(bodyParser.json({limit: '10mb'}))
+app.use(cors())
 
 app.route('/')
     .get((req, res) => {
