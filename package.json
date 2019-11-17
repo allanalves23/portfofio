@@ -3,8 +3,8 @@
     "name": "portfolio",
     "version": "2.0.0",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch",
-        "nodemon": "nodemon"
+        "gulp": "node_modules/.bin/gulp watch",
+        "start": "nodemon"
     },
     "description": "'startbootstrap-resume' - Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
     "keywords": [
