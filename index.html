@@ -1,256 +1,328 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Allan Wanderley</title>
-    <style>
-        body{
-            height: 100%; 
-            font-family: 'Montserrat', sans-serif;
-        }
 
-        p{
-            margin-bottom: 4px ;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Portfolio">
+  <meta name="author" content="Allan Wanderley Alves">
 
-        .app-color{
-            background-color: rgb(23, 25, 109);
-        }
+  <title>Allan Wanderley - Portfolio</title>
 
-        .app-button{
-            width: 220px;
-        }
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        .content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-        .description{
-            text-align: justify;
-            flex-wrap: wrap;
-            overflow: hidden;
-        }
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
 
-        .footer{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            background-color: rgb(23, 25, 109);
-            color: #fff;
-            padding: 10px 5px;
-        }
-
-        .link{
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .link:hover{
-            color: rgb(80, 105, 185);
-            text-decoration: none;
-            transition: .15s;
-        }
-
-        .info{
-            margin-bottom: 10px;
-        }
-
-        .img-profile{
-            border-radius: 15px;
-
-        }
-
-        @media(max-width: 768px){
-            .skills_or_project{
-                margin-bottom: 25px;
-            }
-
-            .footer{
-                height: 120px;
-                justify-content: center;
-                align-items: space-between;
-            }
-
-            .app-button{
-                margin-bottom: 15px;
-            }
-        }
-
-    </style>
-    <script src="https://kit.fontawesome.com/c412b87a2b.js"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark app-color">
-        <a class="navbar-brand" href="/">
-            <div class="d-flex align-items-center">
-                <img src="/public/imgs/logo.webp" width="30" height="30" alt="Logo">
-                <span class="ml-4 mr-4"><strong>Allan</strong></span>
-            </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active p-2">
-                    <a class="nav-link" href="/"><strong>Sobre</strong><span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item p-2">
-                    <div class="btn-group">
-                        <a class="nav-link" href="/projetos"><strong>Projetos</strong></a>
-                        <a class="dropdown-toggle dropdown-toggle-split d-flex align-items-center" style="cursor: pointer; color: #fff;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/projetos/aps-poo">Jogo de digitaçao (Java)</a>
-                            <a class="dropdown-item" disabled href="/projetos/coder-mind">Coder Mind</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/projetos">Ver todos</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item dropdown p-2">
-                </li>
-                <li class="nav-item p-2">
-                    <a class="nav-link" href="/contato"><strong>Contato</strong></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div>
-        <div class="container content mb-4 mt-4">
-            <div class="row mb-5">
-                <div class="col-xs-12 col-md-4 d-flex align-items-center">
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/public/imgs/me1.webp" class="d-block w-100 img-profile" alt="Foto do allan no centro da cidade">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/public/imgs/me2.webp" class="d-block w-100 img-profile" alt="Foto do allan de óculos">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Próximo</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-8 p-5 description">
-                    <div class="info">
-                        <h2>Quem sou eu?</h2>
-                        <hr>
-                    </div>
-                    <p>Seja bem vindo ao meu portfólio! </p>
-                    <p>Meu nome é Allan, tenho 21 anos, técnico de informática, programador e estudante no curso de Ciências da computação.</p>
-                    <p>Atuo em diversas áreas de desenvolvimento de sistemas, dentre as principais estão programação web e mobile.</p>
-                    <p>Fortes conhecimentos em frameworks JS e familiaridades com bancos de dados SQL e noSQL</p>
-                    <p>Fique a vontade para visualizar meus projetos, skills e redes sociais.</p>
-                </div>
-            </div>
-            <div class="container mb-4">
-                <div class="row mt-2">
-                    <div class="col-xs-12 col-sm-6 skills_or_project">
-                        <div class="d-flex info">
-                            <i class="fas fa-code fa-2x mr-3"></i>
-                            <h3>Habilidades</h3>
-                        </div>
-                        <hr>
-                        <div class="d-flex flex-wrap justify-content-center">
-                            <button type="button" class="btn btn-light btn-sm d-flex align-items-center flex-wrap mr-1 ml-1">
-                                <i class="fab fa-node-js fa-2x mr-2 mb-2"></i>
-                                Node.js
-                            </button>
-                            <button type="button" class="btn btn-light btn-sm d-flex align-items-center flex-wrap mr-1 ml-1">
-                                <i class="fab fa-react fa-2x mr-2 mb-2"></i>
-                                React
-                            </button>
-                            <button type="button" class="btn btn-light btn-sm d-flex align-items-center flex-wrap mr-1 ml-1">
-                                <i class="fab fa-vuejs fa-2x mr-2 mb-2"></i>
-                                Vue.js
-                            </button>
-                            <button type="button" class="btn btn-light btn-sm d-flex align-items-center flex-wrap mr-1 ml-1">
-                                <i class="fab fa-java fa-2x mr-2 mb-2"></i>
-                                Java
-                            </button>
-                            <button type="button" class="btn btn-light btn-sm d-flex align-items-center flex-wrap mr-1 ml-1">
-                                <i class="fab fa-js-square fa-2x mr-2 mb-2"></i>
-                                JS
-                            </button>
-                            <button type="button" class="btn btn-light btn-sm d-flex align-items-center flex-wrap mr-1 ml-1">
-                                <i class="fab fa-php fa-2x mr-2 mb-2"></i>
-                                PHP
-                            </button>
-                            <button type="button" class="btn btn-light btn-sm d-flex align-items-center flex-wrap mr-1 ml-1">
-                                <i class="fas fa-terminal fa-2x mr-2 mb-2"></i>
-                                Rest/Restful api
-                            </button>
-                            <button type="button" class="btn btn-light btn-sm d-flex align-items-center flex-wrap mr-1 ml-1">
-                                <i class="fas fa-database fa-2x mr-2 mb-2"></i>
-                                MySQL
-                            </button>
-                            <button type="button" class="btn btn-light btn-sm d-flex align-items-center flex-wrap mr-1 ml-1">
-                                <i class="fas fa-database fa-2x mr-2 mb-2"></i>
-                                MongoDB
-                            </button>
-                            <button type="button" class="btn btn-light btn-sm d-flex align-items-center flex-wrap mr-1 ml-1">
-                                <i class="fab fa-linux fa-2x mr-2 mb-2"></i>
-                                Linux
-                            </button>
-                            <button type="button" class="btn btn-light btn-sm d-flex align-items-center flex-wrap mr-1 ml-1">
-                                <i class="fas fa-laptop fa-2x mr-2 mb-2"></i>
-                                Hardware
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 skills_or_project">
-                        <div class="d-flex info">
-                            <i class="fas fa-walking fa-2x mr-3"></i>
-                            <h3>Projeção</h3>
-                        </div>
-                        <hr>
-                        <p>Consolidação na área de desenvolvimento de sistemas, para a longo prazo estar atuando como arquiteto de software.</p>
-                    </div>
-                </div>
-                <div class="container mt-5 mb-5">
-                    <div class="row d-flex justify-content-center">
-                        <a href="/projetos" class="btn link app-color app-button mr-3 ml-3">
-                            <i class="fas fa-project-diagram fa-md mr-2"></i>
-                            Visualizar projetos
-                        </a>
-                        <a href="/contato" class="btn link app-color app-button mr-3 ml-3">
-                            <i class="fas fa-comment-dots fa-md mr-2"></i>
-                            Entrar em contato
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="d-flex align-items-center">
-                <a href="https://github.com/allanalves23" class="link ml-4 mr-4"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://linkedin.com/in/allanalves23" class="link ml-4 mr-4"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="mailto:awallan259@gmail.com" class="link ml-4 mr-4"><i class="fas fa-at fa-2x"></i></a>
-            </div>
-            <div class="d-flex justify-content-end align-items-center p-1" id="year"></div>
-        </footer>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Allan Wanderley</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">Quem sou eu?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experiencia">Experiência</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#escolaridade">Escolaridade</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#habilidades">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interesses">Interesses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#certificacoes">Certificações</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projetos">Projetos</a>
+        </li>
+      </ul>
     </div>
-    <script>
-        document.querySelector('#year').insertAdjacentHTML('afterbegin', `<a href="/" class="link"><i class="fas fa-server mr-2"></i><span class="mr-2 ml-2"> allanalves23 - ${new Date().getFullYear()}</span></a>`)
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Allan
+          <span class="text-primary">Wanderley</span>
+        </h1>
+        <div class="subheading mb-5">Rua gazeta da tarde · Taquara - RJ, 22715-100 · (21) 96463-0304 ·
+          <a href="mailto:awallan259@gmail.com">awallan259@gmail.com</a>
+        </div>
+        <div class="lead mb-5">
+          <p>
+            Seja bem vindo ao meu portfólio!
+          </p>
+          <p>
+            Meu nome é Allan, tenho 22 anos, técnico de informática, programador e estudante no curso de Ciências da computação, atuo em diversas áreas de desenvolvimento de sistemas dentre as principais estão programação web e mobile.
+          </p>
+          <p>
+            Conhecimentos em frameworks JS e bancos de dados SQL e noSQL, fique a vontade para visualizar meus projetos, skills e redes sociais.
+          </p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/allanalves23/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/allanalves23">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/allanalves23">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experiencia">
+      <div class="w-100">
+        <h2 class="mb-5">Experiência</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Estágio desenvolvimento de sistemas</h3>
+            <div class="subheading mb-3">Total Control - Make Solutions</div>
+            <p>
+                Desenvolvimento de paineis de relatórios, telas e procedimentos em bancos de dados Oracle. Desenvolvimento de aplicações baseadas em Laravel e Vue.js, ainda em andamento.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Agosto 2019 - Presente</span>
+          </div>
+        </div>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Desenvolvedor web</h3>
+            <div class="subheading mb-3">PDV Digital</div>
+            <p>
+              Desenvolvimento de um sistema ERP para a empresa, baseado em microserviço utilizando Node.js e uma interface em Vue.js para interação com a aplicação.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Janeiro 2019 - Maio 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Analista de Suporte técnico Jr.</h3>
+            <div class="subheading mb-3">Ticket Mais - Media Tickets Mediação de Pagamentos LTDA</div>
+            <p>Atendimento a clientes, configuração de equipamentos POS, implementação de um sistema controle de equipamentos na web, treinamentos e serviços de logística.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Junho 2018 - Novembro 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Estagiário de suporte técnico</h3>
+            <div class="subheading mb-3">Ticket Mais - Media Tickets Mediação de Pagamentos LTDA</div>
+            <p>Atendimento a clientes, configuração de equipamentos POS, treinamentos.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Janeiro 2018 - Junho 2018</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="escolaridade">
+      <div class="w-100">
+        <h2 class="mb-5">Escolaridade</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Centro Universitário Carioca de Ensino Superior</h3>
+            <div class="subheading mb-3">Bacharelado em Ciência da Computação</div>
+            <div>6º Período</div>
+            <p>Previsão de conclusão em 2020.2 (Segundo semestre de 2020)</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Agosto de 2016 - Presente</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="habilidades">
+      <div class="w-100">
+        <h2 class="mb-5">Habilidades</h2>
+
+        <div class="subheading mb-3">Linguagens de programação &amp; Ferramentas</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-php"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-laravel"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-vuejs"></i>
+          </li>
+        </ul>
+
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Responsividade como prioridade
+          </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            APIs seguras e testadas</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Otimização de tempo</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Aberto para novas ideias</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interesses">
+      <div class="w-100">
+        <h2 class="mb-5">Interesses</h2>
+        <p>Consolidação na área de desenvolvimento de sistemas, buscando entender problemas para entregar soluções.</p>
+        <p class="mb-0">Com projeção em tornar-se arquiteto de software, atualmente possui um <a href="https://codermind.com.br" target="_blank">blog</a> para postagens de artigos e tutorias de tecnologias,</p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="certificacoes">
+      <div class="w-100">
+        <h2 class="mb-5">Certificações</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Web moderno 2018 - Udemy - Leonardo Moura Leitão
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Documentação e implementação apis Rest - Udemy - Jackson Pires
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Gestão ágil com SCRUM - Udemy - Gustavo Farias
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projetos">
+      <div class="w-100">
+        <h2 class="mb-5">Projetos</h2>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Coder Mind</h3>
+            <div class="subheading mb-3">Repositório de conhecimento</div>
+            <p>
+              Um blog para armazenamento de artigos e tutorias sobre tecnologia, com suporte a multiplos autores. Sistema de autenticação, recomendação de artigos e controle de estatísticas.
+            </p>
+            <p>Arquitetura baseada em microserviço com APIs em node.js pelo framework Express.js, parte visual implementada em React JS e uma base de dados MongoDB e MariaDB.</p>
+            <div>
+              <a href="https://codermind.com.br">
+                <button type="button" class="btn btn-coder-mind"><i class="fas fa-code mr-2"></i>IR PARA CODER MIND</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Pangrama's Challenge</h3>
+            <div class="subheading mb-3">Jogo de digitação - Java - Swing</div>
+            
+            <p>Motivação por atividades acadêmicas, este programa é um jogo de digitação de pangramas. O usuário deverá digitar corretamente o pangrama informado buscando sempre o menor tempo possível, enquanto poderá acompanhar seu resultado parcial em tempo real.</p>
+
+            <p>Ao concluir a frase, é informado o resultado e assim poderá ser consultado posteriormente em um scoreboard.
+            É possível informar um nickname para facilitar a identificação do usuário que fez tal resultado.</p>
+
+            <p>Dentre algumas outras funcionalidades estão:</p>
+            <ul>
+              <li>Alterar idioma dos pangramas</li>  
+              <li>Selecionar pangrama para digitação</li>  
+              <li>Alterar cor de background das teclas pressionadas</li>  
+              <li>Funciona em sistemas operacionais Linux e Windows.</li>  
+            </ul>
+
+            <p>Para fazer o download basta acessar o repositório abaixo e clicar no botão de download: 
+              <br> <a href="https://github.com/allanalves23/aps_poo">https://github.com/allanalves23/aps_poo</a> <br>
+            Para sistemas Windows poderá ser necessário iniciar o programa como administrador para ser possível efetuar a gravação do nickname dos resultados.</p>
+          </div>
+        </div>
+      </div>
+      </section>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
 </body>
+
 </html>

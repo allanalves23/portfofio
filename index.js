@@ -5,6 +5,12 @@ const cors = require('cors')
 
 
 app.use('/public', express.static('public'))
+
+app.use('/vendor', express.static('vendor'))
+app.use('/css', express.static('css'))
+app.use('/img', express.static('img'))
+app.use('/js', express.static('js'))
+
 app.use(bodyParser.json({limit: '10mb'}))
 app.use(cors())
 
