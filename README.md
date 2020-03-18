@@ -7,3 +7,4 @@ Portfólio com o template Resume de Start Bootstrap, mantido por **[David Miller
 
 **Acesso ao portfólio:**
 [https://allanalves23.top](https://allanalves23.top)
+https://allanwanderley-portfolio.herokuapp.com
