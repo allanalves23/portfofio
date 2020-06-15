@@ -21,11 +21,8 @@ app.get("/curriculum", (req, res) =>
   res.download("./public/pdf/Allan_Curriculo.pdf")
 );
 
-app.post("/debugTest", (req, res) => {
-  const data = { ...req.body };
-  return res.json(data);
-});
+app.post("/debugTest", (req, res) => res.json(req.body));
 
-const _PORT = process.env.PORT;
+const _PORT = process.env.PORT || 3000;
 
 app.listen(_PORT, () => console.log(`Running at port: ${_PORT}`));
