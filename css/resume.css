@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Portfolio Allan Wanderley Alves v2.0.0 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2020 Start Bootstrap
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/portfolio/blob/master/LICENSE)
  */
 
@@ -72,7 +72,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #1619af;
+  background-color: #091c38;
 }
 
 .dev-icons {
@@ -80,7 +80,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #1619af;
+  color: #091c38;
 }
 
 .btn-coder-mind {
@@ -101,7 +101,7 @@ p.lead {
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #2d31e5;
+  outline-color: #143d7a;
 }
 
 @media (min-width: 992px) {
@@ -171,17 +171,17 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #1619af !important;
+  background-color: #091c38 !important;
 }
 
 .text-primary {
-  color: #1619af !important;
+  color: #091c38 !important;
 }
 
 a {
-  color: #1619af;
+  color: #091c38;
 }
 
 a:hover, a:focus, a:active {
-  color: #0d0f6b;
+  color: black;
 }
