@@ -1,10 +1,9 @@
 # Portfolio - Allan Wanderley Alves
 
-Portfólio com o template Resume de Start Bootstrap, mantido por **[David Miller](http://davidmiller.io/)** dono da [Blackrock Digital](http://blackrockdigital.io/).
+Template Resume - Start Bootstrap, maintained por **[David Miller](http://davidmiller.io/)** [Blackrock Digital's owner](http://blackrockdigital.io/).
 
-**Acesso ao template:**
+**Template:**
 [https://startbootstrap.com/themes/resume/](https://startbootstrap.com/themes/resume/)
 
-**Acesso ao portfólio:**
-[https://allanalves23.top](https://allanalves23.top)
-https://allanwanderley-portfolio.herokuapp.com
+**Portfolio:**
+[https://allanalves23.dev](https://allanalves23.dev)
