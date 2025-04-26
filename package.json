@@ -1,58 +1,23 @@
 {
-  "title": "Portfolio Allan Wanderley Alves",
-  "name": "portfolio",
-  "version": "2.0.0",
+  "name": "portfolio-v2",
+  "version": "0.0.1",
+  "description": "personal portfolio",
+  "main": "js/scripts.js",
   "scripts": {
-    "gulp": "node_modules/.bin/gulp watch",
-    "start": "node index.js",
-    "dev": "nodemon"
+    "start": "ws",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "description": "'startbootstrap-resume' - Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
-  "keywords": [
-    "css",
-    "sass",
-    "html",
-    "responsive",
-    "theme",
-    "template",
-    "allan",
-    "portfolio"
-  ],
-  "homepage": "https://startbootstrap.com/template-overviews/resume",
-  "bugs": {
-    "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-    "email": "feedback@startbootstrap.com"
-  },
-  "license": "MIT",
-  "author": "Start Bootstrap",
-  "contributors": [
-    "David Miller (http://davidmiller.io/)"
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+    "url": "git+https://github.com/allanalves23/portfofio.git"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "5.10.2",
-    "body-parser": "1.19.0",
-    "bootstrap": "4.3.1",
-    "cors": "2.8.5",
-    "express": "^4.17.1",
-    "jquery": "^3.5.1",
-    "jquery.easing": "^1.4.1"
+  "author": "Allan Wanderley Alves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allanalves23/portfofio/issues"
   },
+  "homepage": "https://github.com/allanalves23/portfofio#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.12",
-    "del": "5.1.0",
-    "gulp": "4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-header": "2.0.9",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify": "3.0.2",
-    "merge-stream": "2.0.0",
-    "nodemon": "^2.0.4"
+    "local-web-server": "^5.4.0"
   }
 }
