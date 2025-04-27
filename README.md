@@ -1,9 +1,9 @@
 # Portfolio - Allan Wanderley Alves
 
-Template Resume - Start Bootstrap, maintained por **[David Miller](http://davidmiller.io/)** [Blackrock Digital's owner](http://blackrockdigital.io/).
+Template Freelancer - Start Bootstrap, maintained for Start Bootstrap LLC.
 
 **Template:**
-[https://startbootstrap.com/themes/resume/](https://startbootstrap.com/themes/resume/)
+[https://startbootstrap.com/theme/freelancer](https://startbootstrap.com/theme/freelancer)
 
 **Portfolio:**
 [https://allanalves23.dev](https://allanalves23.dev)
