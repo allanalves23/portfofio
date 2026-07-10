@@ -11049,3 +11049,73 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+/* Language toggle (i18n) — the theme only styles a.nav-link, so the
+   <button> needs its own rules to match the other navbar items */
+#mainNav .navbar-nav li.nav-item button.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-family: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+}
+#mainNav .navbar-nav li.nav-item button.lang-toggle:hover,
+#mainNav .navbar-nav li.nav-item button.lang-toggle:focus {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+.lang-flag {
+  display: inline-flex;
+}
+.lang-flag svg {
+  width: 1.35em;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+#mainNav .navbar-nav li.nav-item button.lang-toggle::after {
+  margin-left: 0.35rem;
+  vertical-align: 0.1em;
+}
+.lang-dropdown-menu {
+  min-width: 11rem;
+  padding: 0.35rem;
+  background-color: #091c38;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.lang-dropdown-menu .lang-option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 0.9rem;
+  text-transform: none;
+}
+.lang-dropdown-menu .lang-option:hover,
+.lang-dropdown-menu .lang-option:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.lang-dropdown-menu .lang-option.active {
+  background-color: #122c83;
+  color: #fff;
+}
+
+/* Below the lg breakpoint the navbar itself is already a collapsed
+   dropdown, so a nested dropdown-in-dropdown for the language switcher
+   reads oddly. There the button just toggles the language directly on
+   tap, so the caret and popup menu are hidden. */
+@media (max-width: 991.98px) {
+  #mainNav .navbar-nav li.nav-item button.lang-toggle.dropdown-toggle::after {
+    display: none;
+  }
+  .lang-dropdown-menu {
+    display: none !important;
+  }
+}
