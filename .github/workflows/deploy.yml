@@ -1,0 +1,59 @@
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch: {}
+
+env:
+  IMAGE_NAME: allanalves23/portfolio
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Inject Formspree endpoint
+        run: sed -i "s%__action__%${{ secrets.FORMSPREE_URL }}${{ secrets.FORMSPREE_TOKEN }}%g" index.html
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ${{ env.IMAGE_NAME }}:latest
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Azure login (OIDC)
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Update Container App
+        uses: azure/CLI@v2
+        with:
+          # --revision-suffix forces a new revision even though the image
+          # tag string (":latest") never changes, otherwise Container Apps
+          # has no signal to re-pull the image.
+          inlineScript: |
+            az containerapp update \
+              --name portfolio-allan \
+              --resource-group portfolio-allan \
+              --image docker.io/${{ env.IMAGE_NAME }}:latest \
+              --revision-suffix gh${{ github.run_number }}
