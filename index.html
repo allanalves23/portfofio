@@ -20,14 +20,24 @@
             <div class="container">
                 <a class="navbar-brand" href="#page-top"></a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
+                    <span data-i18n="nav.menu">Menu</span>
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about" data-i18n="nav.about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" data-i18n="nav.contact">Contact</a></li>
+                        <li class="nav-item dropdown mx-0 mx-lg-1">
+                            <button class="nav-link lang-toggle dropdown-toggle py-3 px-0 px-lg-3 rounded" id="langDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Change language">
+                                <span class="lang-flag" id="langCurrentFlag" aria-hidden="true"></span>
+                                <span id="langCurrentText">EN</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end lang-dropdown-menu" aria-labelledby="langDropdown">
+                                <li><button class="dropdown-item lang-option" type="button" data-lang="en"><span class="lang-flag" data-lang-flag="en" aria-hidden="true"></span> English</button></li>
+                                <li><button class="dropdown-item lang-option" type="button" data-lang="pt-BR"><span class="lang-flag" data-lang-flag="pt-BR" aria-hidden="true"></span> Português (BR)</button></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -46,14 +56,14 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Solutions/Corporate Architect - Software Developer</p>
+                <p class="masthead-subheading font-weight-light mb-0" data-i18n="masthead.subheading">Solutions/Corporate Architect - Software Developer</p>
             </div>
         </header>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" data-i18n="portfolio.heading">Portfolio</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -105,7 +115,7 @@
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white" data-i18n="about.heading">About</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -114,14 +124,14 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">I'm a software architect from Brazil. Passionate about software development, currently working at B3, delivering software solutions across the organization. With skills in software architecture, gitflow, continuous delivery, observability and code quality assurance.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Husband, Father, lover of coffee and beer, seeking my best performance to deliver assertive solutions to all users of software that I produce.</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead" data-i18n="about.p1">I'm a software architect from Brazil. Passionate about software development, currently working at B3, delivering software solutions across the organization. With skills in software architecture, gitflow, continuous delivery, observability and code quality assurance.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead" data-i18n="about.p2">Husband, Father, lover of coffee and beer, seeking my best performance to deliver assertive solutions to all users of software that I produce.</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
                     <a class="btn btn-xl btn-outline-light" target="_blank" href="/public/pdf/Allan_Curriculo.pdf">
                         <i class="fas fa-download me-2"></i>
-                        Curriculum Download
+                        <span data-i18n="about.cv">Curriculum Download</span>
                     </a>
                 </div>
             </div>
@@ -130,7 +140,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" data-i18n="contact.heading">Contact Me</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -144,12 +154,12 @@
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" required />
-                                <label for="email">Email address</label>
+                                <label for="email" data-i18n="contact.email">Email address</label>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" name="message" required></textarea>
-                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." data-i18n-placeholder="contact.messagePlaceholder" style="height: 10rem" name="message" required></textarea>
+                                <label for="message" data-i18n="contact.message">Message</label>
                             </div>
                             <!-- Submit success message-->
                             <!---->
@@ -157,8 +167,8 @@
                             <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
+                                    <div class="fw-bolder" data-i18n="contact.success">Form submission successful!</div>
+                                    <span data-i18n="contact.activate">To activate this form, sign up at</span>
                                     <br />
                                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
@@ -167,9 +177,9 @@
                             <!---->
                             <!-- This is what your users will see when there is-->
                             <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3" data-i18n="contact.error">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit" data-i18n="contact.send">Send</button>
                         </form>
                     </div>
                 </div>
@@ -181,16 +191,16 @@
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <h4 class="text-uppercase mb-4" data-i18n="footer.location">Location</h4>
                         <p class="lead mb-0">
-                            Brazil
+                            <span data-i18n="footer.country">Brazil</span>
                             <br />
-                            Rio de Janeiro
+                            <span data-i18n="footer.city">Rio de Janeiro</span>
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <h4 class="text-uppercase mb-4" data-i18n="footer.web">Around the Web</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/allanalves23" target="_blank"><i class="fa-brands fa-fw fa-github"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/allanwalves" target="_blank"><i class="fab fa-fw fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/allanalves23" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
@@ -223,21 +233,19 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/b3.webp" alt="B3" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Working for the company since the previous experience when an allocation opportunity arose, carrying out
-                                        monitoring, definition and guidance in software projects for the financial market.
-                                        With an emphasis on business, technical, architectural and regulatory visions,
-                                        working with on-premises and cloud solutions, with solid experience in Azure.</h3>
+                                    <p class="mb-4" data-i18n="modal1.desc">Working at the company since the previous allocation experience, now as Solutions and Corporate Architect.
+                                        Principal architect responsible for the adequacy and evolution of the exchange's main post-trade (clearing) platform,
+                                        ensuring performance and resilience in a mission-critical, large-scale environment.</p>
                                     <ul class="list-group list-group-flush mb-3">
-                                        <li class="list-group-item">Creation of ADRs and Architectural Agreements</li>
-                                        <li class="list-group-item">Building, re-architecting and migrating cloud-oriented projects</li>
-                                        <li class="list-group-item">Building and migrating on-premises projects</li>
-                                        <li class="list-group-item">Technology map management with the Architecture team</li>
-                                        <li class="list-group-item">Creation of Architectural Guides</li>
-                                        <li class="list-group-item">Technical support in carrying out Proof of Concepts</li>
+                                        <li class="list-group-item" data-i18n="modal1.item1">Solution design for the market index calculation mechanisms, including the exchange's main stock index</li>
+                                        <li class="list-group-item" data-i18n="modal1.item2">Technical reference in architecture, leading specifications, design reviews and solution standardization across the clearing, risk, issuers and indexes domains</li>
+                                        <li class="list-group-item" data-i18n="modal1.item3">Modernization of critical legacy systems</li>
+                                        <li class="list-group-item" data-i18n="modal1.item4">Design of high-availability and high-throughput cloud architectures (Azure), focused on resilience, observability and regulatory compliance</li>
+                                        <li class="list-group-item" data-i18n="modal1.item5">Corporate architecture work, connecting technical decisions to business constraints, operational risk and governance</li>
                                     </ul>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        <span data-i18n="modal.close">Close Window</span>
                                     </button>
                                 </div>
                             </div>
@@ -266,25 +274,25 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/brq.webp" alt="BRQ" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p>
-                                        Solutions Architect, Technical Leader and Developer. Responsible for technical leadership and ensuring deliveries in multiple
-                                        customer projects.
-
-                                        Working with customers in the retail and financial areas.
+                                    <p data-i18n="modal2.desc">
+                                        Corporate Architect and Solutions/Software Architect. Three years of technical leadership ensuring deliveries in customer projects,
+                                        allocated to clients in the financial and web hosting markets — B3 and Locaweb.
                                     </p>
                                     <ul class="list-group list-group-flush mb-3">
-                                        <li class="list-group-item">Implementation of code quality control tools such as Sonar Cloud</li>
-                                        <li class="list-group-item">Creating automated CI/CD tasks in Github actions and Circle CI</li>
-                                        <li class="list-group-item">Development and delivery of several frontend applications with restructured design with new design system</li>
-                                        <li class="list-group-item">Participation and guidance in the creation of commercial proposals to attract new customers, including technical visions, architectural proposals and work methodologies for the delivery team</li>
-                                        <li class="list-group-item">
-                                            Construction of a platform with executions of website hosting migration engines (PHP, Wordpress, static files using FTP and SQL databases),
-                                            allowing customers already established in competitors to migrate easily, becoming an attractive product for attracting new customers
+                                        <li class="list-group-item" data-i18n="modal2.item1">Work with B3's Corporate Architecture team, focusing on the company's OTC portfolio</li>
+                                        <li class="list-group-item" data-i18n="modal2.item2">End-to-end architectural definitions and technology-business alignment, materializing decisions in Architecture Decision Records (ADRs), architectural agreements and complementary technical documentation</li>
+                                        <li class="list-group-item" data-i18n="modal2.item3">Technical liaison between the Network, Security, Observability, Engineering, Integrations and Business areas, designing and validating solutions in their different aspects</li>
+                                        <li class="list-group-item" data-i18n="modal2.item4">Mapping of the portfolio's technology obsolescence and direction of update and evolution plans, balancing risk, compliance and operational continuity</li>
+                                        <li class="list-group-item" data-i18n="modal2.item5">Architecture and Engineering lead of the BRQ team allocated at Locaweb, with a hands-on technical leadership profile</li>
+                                        <li class="list-group-item" data-i18n="modal2.item6">Definition of coding standards, automated testing and software quality practices, with code review and technical mentoring for the team</li>
+                                        <li class="list-group-item" data-i18n="modal2.item7">
+                                            Architectural revitalization and evolution of the customer's hosting, e-mail and sales platforms:
+                                            solution redesign, troubleshooting and modernization of existing applications, including containerization and workload orchestration
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        <span data-i18n="modal.close">Close Window</span>
                                     </button>
                                 </div>
                             </div>
@@ -313,32 +321,33 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/wg2r.webp" alt="WG Desenvolvimento" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p>
-                                       Developer, Technical Leader and Solutions Architect. Responsible for technical leadership and ensuring deliveries in multiple
-                                       customer projects.
-
-                                       Participation in internal projects and customers in the retail segment.
+                                    <p data-i18n="modal3.desc">
+                                       Software Architect (Senior Developer / Tech Lead), starting as a Full Stack Developer. Responsible for proposing, designing and
+                                       implementing end-to-end technology solutions in internal projects and for customers in the retail segment.
                                     </p>
                                     <ul class="list-group list-group-flush mb-3">
-                                        <li class="list-group-item">
+                                        <li class="list-group-item" data-i18n="modal3.item1">
                                             Definitions of solution architecture, infrastructure and observability in outsourcing and internal projects
                                         </li>
-                                        <li class="list-group-item">
+                                        <li class="list-group-item" data-i18n="modal3.item2">
                                             Responsible for implementing the development process using good security and automation practices in application integration and deployment
                                         </li>
-                                        <li class="list-group-item">Implementation of application components (nuget and npm), allowing the company to deliver software more quickly</li>
-                                        <li class="list-group-item">
+                                        <li class="list-group-item" data-i18n="modal3.item3">Implementation of application components (nuget and npm), allowing the company to deliver software more quickly</li>
+                                        <li class="list-group-item" data-i18n="modal3.item4">
                                             Implementation of observability solutions with elastic observability (APM, Logging, HeartBeat and MetricBeat) and implementation of good practices for the use of GIT in the company
                                         </li>
-                                        <li class="list-group-item">
+                                        <li class="list-group-item" data-i18n="modal3.item5">
                                             Implementation of good development practices, including a culture of automated testing,
                                             creating quality gates in CI/CD tools and automated code coverage validation,
                                             along with education for the development team to develop better tests and ensure quality in their deliveries
                                         </li>
+                                        <li class="list-group-item" data-i18n="modal3.item6">
+                                            Development of domain-driven (DDD) systems orchestrated in the cloud, on hexagonal architecture with CQRS and microservices
+                                        </li>
                                     </ul>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        <span data-i18n="modal.close">Close Window</span>
                                     </button>
                                 </div>
                             </div>
@@ -367,19 +376,19 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/totalcontrol.webp" alt="Total Control" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Starting a career in software development as a web and SQL developer creating procedures, triggers and maintaining reports for the finance, customer support and sales teams.</p>
+                                    <p class="mb-4" data-i18n="modal4.desc">Starting a career in software development as a Full Stack Developer Intern, building APIs, web apps and PL/SQL routines.</p>
                                     <ul class="list-group list-group-flush mb-3">
-                                        <li class="list-group-item">
-                                            Web development using frameworks like Laravel and Vue.js
+                                        <li class="list-group-item" data-i18n="modal4.item1">
+                                            Web application development using frameworks like Laravel and Vue.js
                                         </li>
-                                        <li class="list-group-item">
-                                            Creation and maintenance of SQL procedures and triggers for Oracle databases, with the aim of delivering value to the financial, sales and customer support areas
+                                        <li class="list-group-item" data-i18n="modal4.item2">
+                                            Creation and maintenance of PL/SQL procedures and triggers for Oracle databases, delivering value to the financial, sales and customer support areas
                                         </li>
-                                        <li class="list-group-item">Implementation of the Sankhya ERP Inventory Turnover module for the internal team</li>
+                                        <li class="list-group-item" data-i18n="modal4.item3">Implementation of the Sankhya ERP Inventory Turnover module for the internal team</li>
                                     </ul>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        <span data-i18n="modal.close">Close Window</span>
                                     </button>
                                 </div>
                             </div>
@@ -390,6 +399,8 @@
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Internationalization (en / pt-BR)-->
+        <script src="js/i18n.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
